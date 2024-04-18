@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Kitchen</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header> 
+    <div class="logo">
+      <img src="./assets/img/logo-BK.svg" class="logoBK" alt="Logo BK">
+    </div>
+    <div class = "sort-buttons">
+      <a href="#" id="All">All</a>
+      <a href="#" id="Burgers">Burgers</a>
+      <a href="#" id="Salads">Salads</a>
+      <a href="#" id="Drinks">Drinks</a>
+      <a href="#" id="Deserts">Deserts</a>
+      <a href="#" id="Snacks">Snacks</a>
+    </div>
+    <a href="#" id="shopID"><img src="./assets/img/shopping-cart.svg" class="shopCart" alt="shopping-cart"></a>
+  </header>
+  <section class="banner">
+    <img src="./assets/img/Banner.webp" class="bannerIMG" alt="Veggie Burgers Banner">
+  </section>
+  <section class="shopCartMenu">
+      <table id="menuTable">
+          <thead>
+              <tr>
+                  <th>Dishes</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+              </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="3" style="text-align: right;"><strong>Total :</strong></td>
+                  <td id="total"></td>
+              </tr>
+          </tfoot>
+      </table>
+  </section>
+  
+
+  <main class="Main">
+    <section class="Burgers category-box">
+      <h1>Burgers</h1>
+      <div class="img-box">
+        <img src="./assets/img/DoubleWhopperCheese.webp"  alt="Double Whopper Cheese">
+        <p>10.50<span>€</span></p>
+        <h2>Double Whooper</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/LouisianaBeef.webp" alt="Louisiana Beef">
+        <p>12.40<span>€</span></p>
+        <h2>Louisiana Beef</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/LouisianaChicken.webp" alt="Louisiana Chicken">
+        <p>11.30<span>€</span></p>
+        <h2>Louisiana Chicken</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/MasterAngus.webp" alt="Master Angus">
+        <p>14.50<span>€</span></p>
+        <h2>Master Angus</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/TexasBacon.webp" alt="Texas Bacon">
+        <p>10.50<span>€</span></p>
+        <h2>Texas Bacon</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/UltimateChickenBacon.webp" alt="Ultimate Chicken Bacon">
+        <p>10.50<span>€</span></p>
+        <h2>Ultimate Chicken Bacon</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/Whopper.webp" alt="Whopper">
+        <p>10.50<span>€</span></p>
+        <h2>Whopper</h2>
+      </div>
+      <div class="burgersIMG img-box">
+        <img src="./assets/img/KingFish.webp" alt="King Fish">
+        <p>10.50<span>€</span></p>
+        <h2>King Fish</h2>
+      </div>
+    </section>
+    <section class="Salads category-box">
+      <h1>Salads</h1>
+      <div class="saladsIMG img-box">
+        <img src="./assets/img/SideSalad.webp" alt="Side Salad">
+        <p>10.50<span>€</span></p>
+        <h2>Side Salad</h2>
+      </div>
+      <div class="saladsIMG img-box">
+        <img src="./assets/img/CrispyChickenSalad.webp" alt="Chicken Crispy Salad">
+        <p>10.50<span>€</span></p>
+        <h2>Chicken Crispy Salad</h2>
+      </div>
+    </section>
+    <section class="Drinks category-box">
+      <h1>Drinks</h1>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/Chaudfontaine.webp" alt="Chaudfontaine">
+        <p>3.50<span>€</span></p>
+        <h2>Chaudfontaine</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/ChaudfontainePet.webp" alt="Chaudfontaine Sparkling">
+        <p>4<span>€</span></p>
+        <h2>Chaudfontaine Sparkling</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/Cafe.webp" alt="Cafe">
+        <p>3<span>€</span></p>
+        <h2>Coffee</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/Cappucino.webp" alt="Cappucino">
+        <p>3.50<span>€</span></p>
+        <h2>Capuccino</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/Jupiler.webp" alt="Jupiler Beer">
+        <p>5.50<span>€</span></p>
+        <h2>Jupiler</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/MinuteMaid.webp" alt="Minute Maid">
+        <p>3.50<span>€</span></p>
+        <h2>Minute Maid</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/Monster.webp" alt="Monster">
+        <p>5<span>€</span></p>
+        <h2>Monster Energy</h2>
+      </div>
+      <div class="drinksIMG img-box">
+        <img src="./assets/img/The.webp" alt="Tea">
+        <p>2.50<span>€</span></p>
+        <h2>Tea</h2>
+      </div>
+    </section>
+    <section class="Deserts category-box">
+      <h1>Desserts</h1>
+      <div class="desertsIMG img-box">
+        <img src="./assets/img/Brownie.webp" alt="Brownie">
+        <p>3.50<span>€</span></p>
+        <h2>Brownie</h2>
+      </div>
+      <div class="desertsIMG img-box">
+        <img src="./assets/img/OreoShakes.webp" alt="Oreo Shakes">
+        <p>6<span>€</span></p>
+        <h2>Oreo Shakes</h2>
+      </div>
+      <div class="desertsIMG img-box">
+        <img src="./assets/img/Pancakes.webp" alt="Pancakes">
+        <p>5.50<span>€</span></p>
+        <h2>Pancakes</h2>
+      </div>
+      <div class="desertsIMG img-box">
+        <img src="./assets/img/Sundae.webp" alt="Sundae">
+        <p>3.20<span>€</span></p>
+        <h2>Sundae</h2>
+      </div>
+    </section>
+    <section class="Snacks category-box">
+      <h1>Snacks</h1>
+      <div class="snacksIMG img-box">
+        <img src="./assets/img/ChickenBox.webp" alt="Chicken Box">
+        <p>7.30<span>€</span></p>
+        <h2>Chicken Box</h2>
+      </div>
+      <div class="snacksIMG img-box">
+        <img src="./assets/img/Fries.webp" alt="Fries">
+        <p>4.20<span>€</span></p>
+        <h2>Fries</h2>
+      </div>
+      <div class="snacksIMG img-box">
+        <img src="./assets/img/OnionRings.webp"  alt="Onion Rings">
+        <p>6<span>€</span></p>
+        <h2>Onion rings</h2>
+      </div>
+      <div class="snacksIMG img-box">
+        <img src="./assets/img/ChickenWings.webp" alt="Chicken Wings">
+        <p>8.35<span>€</span></p>
+        <h2>Chicken Wings</h2>
+      </div>
+    </section>
+  </main>
+  <footer>
+  <h2>Burger King</h2>
+  </footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,288 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+@font-face {
+  font-family: "FlameBold";
+  src: url("./assets/Fonts/FlameBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "FlameCondensed";
+  src: url("./assets/Fonts/FlameCondesnsed.otf") format("opentype");
+}
+@font-face {
+  font-family: "FlameRegular";
+  src: url("./assets/Fonts/FlameRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "FlameSans";
+  src: url("./assets/Fonts/FlameSans.otf") format("opentype");
+}
+.shopCartMenu {
+  font-family: "FlameRegular";
+  margin-top: 4%;
+  margin-inline: auto;
+  display: none;
+  justify-content: center;
+  width: 360px;
+  background-color: white;
+  border-radius: 15px;
+}
+.shopCartMenu table {
+  padding: 20px;
+}
+.shopCartMenu table tr {
+  font-size: 12px;
+}
+.shopCartMenu table th {
+  color: #ff8732;
+  font-size: 14px;
+  text-align: left;
+}
+.shopCartMenu table tfoot td {
+  color: #ff8732;
+}
+
+.img-box {
+  height: 170px;
+  width: 170px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 9px;
+  font-family: "FlameRegular";
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.img-box h2 {
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+}
+.img-box img {
+  margin-block: auto;
+  max-width: 100%;
+  max-height: 130px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+p {
+  color: #ff8732;
+  font-size: 12px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #ff8732;
+  font-family: "FlameRegular";
+  font-size: 15px;
+  color: rgb(255, 201, 165);
+}
+footer h2 {
+  margin-block: auto;
+}
+
+.category-box {
+  font-family: "FlameRegular";
+  margin-bottom: 10%;
+  display: grid;
+  grid-auto-flow: rows;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+}
+.category-box h1 {
+  justify-self: start;
+  grid-column: span 2;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f5ebdc;
+  color: #502212;
+}
+
+#shopID {
+  background-color: white;
+  background-color: rgb(251, 217, 194);
+  display: flex;
+  height: 33px;
+  width: 33px;
+  margin-block: auto;
+  border-radius: 20px;
+}
+#shopID .shopCart {
+  margin-block: auto;
+  padding-left: 5px;
+  height: 22px;
+  width: auto;
+  filter: invert(13%) sepia(95%) saturate(605%) hue-rotate(335deg) brightness(96%) contrast(97%);
+}
+
+#shopID:hover {
+  background-color: white;
+}
+
+.bannerIMG {
+  width: 100%;
+  max-height: 100%;
+}
+
+.logoBK {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding-inline: 5%;
+  background-color: #ff8732;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  padding-top: 2px;
+  margin-block: auto;
+  background-color: white;
+  border-radius: 12px;
+}
+header .sort-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  gap: 1rem;
+  height: 7vh;
+}
+header .sort-buttons a {
+  text-decoration: none;
+  line-height: 25px;
+  font-size: 13px;
+  font-family: "FlameRegular";
+  color: rgb(255, 201, 165);
+}
+header .sort-buttons a:hover {
+  color: white;
+}
+
+main {
+  margin-block: 5%;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .category-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .category-box h1 {
+    justify-self: start;
+    grid-column: span 4;
+  }
+}
+@media (max-width: 425px) {
+  .category-box {
+    gap: 0.5rem;
+  }
+  header .sort-buttons {
+    gap: 0.5rem;
+  }
+  header .sort-buttons a {
+    font-size: 11.5px;
+  }
+}
+@media (min-width: 1000px) {
+  .img-box {
+    height: 220px;
+    width: 220px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+.shopCartMenu th:nth-child(1),
+.shopCartMenu td:nth-child(1) {
+  text-align: left;
+}
+
+.shopCartMenu th:nth-child(2),
+.shopCartMenu td:nth-child(2),
+.shopCartMenu th:nth-child(3),
+.shopCartMenu td:nth-child(3),
+.shopCartMenu th:nth-child(4),
+.shopCartMenu td:nth-child(4) {
+  text-align: center;
+}
+
+.shopCartMenu th:nth-child(4),
+.shopCartMenu td:nth-child(4) {
+  text-align: right;
+}/*# sourceMappingURL=style.css.map */
