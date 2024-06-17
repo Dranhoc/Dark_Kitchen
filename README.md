@@ -1,3 +1,8 @@
+The final result is available here : https://bk-scam-dark-kitchen.netlify.app/
+
+# Here is the exercise statement for the task:
+
+
 # 😷 Dark Kitchen
 
 > Dark kitchens are also known as virtual kitchens, cloud kitchens, ghost kitchens or delivery-only restaurants. However you call it, a dark kitchen always revolves around the same concept: selling meals exclusively through delivery. Ghost kitchens have no sitting capacity for in-house diners or walk-ins, as they focus only on delivery, preparing food once an order comes in through a delivery app or an online ordering system.
